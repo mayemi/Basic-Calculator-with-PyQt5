@@ -58,7 +58,7 @@ class Window(QWidget):
     def decision(self):
         item = self.comboBox.currentText()
         self.addLog(f"{item} operation selected!")
-        self.pushButton.setText(item.split("m")[0])
+        self.pushButton.setText(item)
 
         if self.currentOperation: self.pushButton.clicked.disconnect(self.currentOperation)
 
